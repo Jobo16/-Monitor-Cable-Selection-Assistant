@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>显示器线材选择助手</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>显示器线材选择助手</h1>
+        <div class="form-group">
+            <label for="resolution">选择分辨率：</label>
+            <select id="resolution">
+                <option value="1920x1080">1920×1080 (全高清)</option>
+                <option value="2560x1440">2560×1440 (2K)</option>
+                <option value="3840x2160">3840×2160 (4K)</option>
+                <option value="7680x4320">7680×4320 (8K)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="refreshRate">选择刷新率：</label>
+            <select id="refreshRate">
+                <option value="60">60Hz</option>
+                <option value="75">75Hz</option>
+                <option value="120">120Hz</option>
+                <option value="144">144Hz</option>
+                <option value="165">165Hz</option>
+                <option value="240">240Hz</option>
+            </select>
+        </div>
+        <div id="result" class="result">
+            <h2>推荐线材规格：</h2>
+            <p id="dp-result">DisplayPort：<span>-</span></p>
+            <p id="hdmi-result">HDMI：<span>-</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
