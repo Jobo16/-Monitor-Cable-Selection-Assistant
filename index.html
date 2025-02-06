@@ -16,7 +16,17 @@
                 <option value="2560x1440">2560×1440 (2K)</option>
                 <option value="3840x2160">3840×2160 (4K)</option>
                 <option value="7680x4320">7680×4320 (8K)</option>
+                <option value="custom">自定义</option>
             </select>
+        </div>
+        <div class="form-group custom-resolution" id="customResolution" style="display: none;">
+            <label>自定义分辨率：</label>
+            <div class="custom-input">
+                <input type="number" id="customWidth" placeholder="宽度" min="1" max="15360">
+                <span>×</span>
+                <input type="number" id="customHeight" placeholder="高度" min="1" max="8640">
+                <span>像素</span>
+            </div>
         </div>
         <div class="form-group">
             <label for="refreshRate">选择刷新率：</label>
@@ -27,12 +37,22 @@
                 <option value="144">144Hz</option>
                 <option value="165">165Hz</option>
                 <option value="240">240Hz</option>
+                <option value="custom">自定义</option>
             </select>
+        </div>
+        <div class="form-group custom-refresh" id="customRefresh" style="display: none;">
+            <label>自定义刷新率：</label>
+            <div class="custom-input">
+                <input type="number" id="customRefreshRate" placeholder="刷新率" min="1" max="500">
+                <span>Hz</span>
+            </div>
         </div>
         <div id="result" class="result">
             <h2>推荐线材规格：</h2>
             <p id="dp-result">DisplayPort：<span>-</span></p>
             <p id="hdmi-result">HDMI：<span>-</span></p>
+            <p id="usb4-result">USB4：<span>-</span></p>
+            <p id="thunderbolt-result">雷电接口：<span>-</span></p>
         </div>
     </div>
     <script src="script.js"></script>
